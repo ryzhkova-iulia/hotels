@@ -1557,6 +1557,14 @@ ul.pay-list {
     left: 20px;
     padding: 25px 55px 25px 25px; }
 
+.agree {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-top: 10px; }
+
 footer {
   width: 100%;
   padding: 20px 0;

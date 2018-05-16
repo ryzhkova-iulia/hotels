@@ -1406,7 +1406,8 @@ header {
   border-radius: 50%;
   border: 1px solid #CCCCCC;
   opacity: 1;
-  z-index: 100; }
+  z-index: 100;
+  top: 44%; }
   .gallery .slick-next:hover {
     border: 1px solid #e7333f; }
 
@@ -1418,7 +1419,8 @@ header {
   border: 1px solid #CCCCCC;
   display: block;
   opacity: 1;
-  z-index: 100; }
+  z-index: 100;
+  top: 44%; }
   .gallery .slick-prev:hover {
     border: 1px solid #e7333f; }
 
@@ -1654,7 +1656,10 @@ footer .tel a:before {
   .map {
     margin-top: 15px; }
   .map-block .address {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .gallery .slick-prev, .gallery .slick-next {
+    width: 30px;
+    height: 30px; } }
 
 @media screen and (max-width: 700px) {
   .conditions__item {

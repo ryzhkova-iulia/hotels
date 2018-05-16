@@ -1,0 +1,116 @@
+@media screen and (max-width: 1300px)
+	.content
+		padding: 0 10px
+	.gallery
+		padding: 0 50px
+	.gallery .slick-next
+		right: 0
+	.gallery .slick-prev
+		left: 0
+
+@media screen and (max-width: 1110px)
+	.address
+		+font-size(13px)
+		top: 5px
+		&__title
+			+font-size(13px)
+		&_two
+			top: initial
+			bottom: 5px
+	.conditions__item
+		width: 50%
+	.conditions
+		justify-content: space-around
+
+
+@media screen and (max-width: 960px)
+	.menu
+		display: none
+	.form-block__item
+		width: 49%
+		margin-bottom: 15px
+	.form-block__item:last-child
+		width: 100%
+		text-align: center
+		.btn
+			width: 50%
+			margin: auto
+	.pay
+		padding-right: 0
+	.pay-list
+		width: 100%
+		margin-bottom: 40px
+		&:last-child
+			margin-bottom: 0
+
+@media screen and (max-width: 768px)
+	.address, .map .content
+		position: static
+	.address_two
+		margin-top: 20px
+	.map__img
+		display: none
+	.address-block__img
+		display: block
+		margin-top: 20px
+	.address
+		box-shadow: none
+		border-radius: 0
+		padding: 20px 0
+	//header
+	//	position: relative
+	//	z-index: 100
+	.map
+		margin-top: 15px
+	.map-block .address
+		padding-left: 0
+
+@media screen and (max-width: 700px)
+	.conditions__item
+		width: 100%
+	.conditions
+		justify-content: flex-start
+		padding-right: 50px
+	.players
+		right: -150px
+	.map-block
+		width: 100%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+	.address
+		padding-right: 0
+
+@media screen and (max-width: 675px)
+	.logo, .tel
+		order: 0
+	.block-menu
+		order: 1
+		span
+			margin-top: 5px
+
+@media screen and (max-width: 550px)
+	.form-block__item
+		width: 100%
+	.form-block__item:last-child
+		.btn
+			width: 100%
+	.gallery
+		padding: 0 35px
+	.ball
+		right: -180px
+
+@media screen and (max-width: 470px)
+	header
+		.content
+			+flexBlockColumn
+	.tel
+		text-align: center
+	.logo
+		margin-bottom: 15px
+	footer
+		.content
+			+flexBlockColumn
+	.block-menu
+		span
+			margin-top: 15px

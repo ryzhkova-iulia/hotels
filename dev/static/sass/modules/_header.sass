@@ -1,0 +1,40 @@
+header
+	padding: 20px 0
+	box-shadow: 0px 3px 25px 0px rgba(32, 34, 35, 0.1)
+	position: relative
+	z-index: 100
+	.content
+		+flexBlockRow
+
+.menu
+	+flexBlockRow
+	&__item
+		+font-size(12px)
+		font-weight: bold
+		text-transform: uppercase
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+.tel
+	text-align: right
+	a
+		+font-size(20px)
+		font-weight: bold
+		margin-bottom: 10px
+		display: block
+		&:before
+			content: "\f095"
+			font: normal normal normal 14px/1 FontAwesome
+			font-size: 18px
+			color: #000000
+			display: inline-block
+			margin-right: 5px
+.call
+	+font-size(12px)
+	text-transform: uppercase
+	color: $mainRed
+	font-weight: bold
+	text-decoration: underline
+	cursor: pointer
+
+

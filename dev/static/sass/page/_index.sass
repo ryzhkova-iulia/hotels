@@ -1,0 +1,335 @@
+.form-callback
+	background-color: #FFFFFF
+	border-radius: 7px
+	width: 100%
+	max-width: 390px
+	position: relative
+	padding: 45px 35px
+	margin: auto
+	text-align: center
+	+flexBlockColumn
+
+	.form-discl span
+		width: 95%
+	.form-block
+		+flexBlockColumn
+
+	.form-block__item
+		width: 100%
+		border: 1px solid #CCCCCC
+		margin-bottom: 10px
+	.btn
+		margin: auto
+		background-color: $mainRed
+		color: #FFFFFF
+		padding: 15px 0
+		margin-top: 5px
+		width: 80%
+		&:hover
+			background-color: darken($mainRed, 10%)
+
+.title_form
+	+font-size(24px)
+	font-weight: bold
+	margin-bottom: 20px
+#poup-callback
+	width: 100%
+
+
+
+.map
+	position: relative
+	//background:  url("../img/general/map.png") no-repeat center
+	//background-size: cover
+	.content
+		position: absolute
+		z-index: 50
+		left: 0
+		right: 0
+		max-width: 1160px
+		top: 0
+		height: 100%
+		background-color: transparent
+	img
+		width: 100%
+.address
+	position: absolute
+	z-index: 10
+	background-color: #FFFFFF
+	padding: 10px
+	border-radius: 5px
+	box-shadow: 0px 3px 25px 0px rgba(32, 34, 35, 0.1)
+	top: 20px
+	left: 0
+	span
+		display: block
+	&_two
+		top: initial
+		left: initial
+		bottom: 20px
+		right: 0
+
+.address-title
+	+font-size(20px)
+	font-weight: bold
+	line-height: 1.3
+	margin-bottom: 5px
+
+.seat
+	margin-top: 15px
+	margin-bottom: 5px
+	span
+		display: inline-block
+		font-weight: bold
+
+
+.price
+	span
+		display: inline-block
+		color: #00a651
+		font-weight: bold
+
+.address-block__img
+	display: none
+
+.title
+	+font-size(36px)
+	font-weight: bold
+	margin-bottom: 45px
+
+.conditions
+	+flexBlockRow
+	color: #212121
+	position: relative
+	padding-right: 100px
+	&__text
+		line-height: 1.3
+	&__text2
+		width: 70%
+	&__item
+		+flexBlockRow
+		justify-content: flex-start
+		flex-wrap: nowrap
+		width: 33.333%
+		max-width: 350px
+		margin-bottom: 35px
+		position: relative
+		z-index: 10
+
+	&__item1
+		+sprite($s-football-field)
+	&__item2
+		+sprite($s-football)
+	&__item3
+		+sprite($s-cocktail)
+	&__item4
+		+sprite($s-sauna)
+	&__item5
+		+sprite($s-restaurant)
+	&__item6
+		+sprite($s-delivery-truck)
+	&__item-com
+		width: 58px
+.line
+	margin: 0 20px
+	+sprite($s-line)
+
+.players
+	position: absolute
+	right: -100px
+	z-index: 1
+
+.bg-gray
+	background-color: #f1f1f1
+.bg-red
+	background-color: $mainRed
+.container_padding
+	padding-bottom: 25px
+
+.form
+	padding: 30px 0
+
+.form-block
+	+flexBlockRow
+	&__item
+		width: 19%
+		position: relative
+		input
+			width: 100%
+			border: none
+			height: 40px
+			border-radius: 3px
+			padding-left: 15px
+			&::placeholder
+				color: #828282
+				+font-size(14px)
+		.btn
+			line-height: 2.8
+
+.error
+	&:after
+		position: absolute
+		bottom: 3px
+		font-weight: bold
+		left: 15px
+		content: "заполните поле"
+		color: $mainRed
+		+font-size(12px)
+
+.btn
+	width: 100%
+	text-transform: uppercase
+	+font-size(14px)
+	background-color: #ffd999
+	font-weight: bold
+	border: none
+	border-radius: 3px
+	cursor: pointer
+	text-align: center
+	&:hover
+		background-color: darken(#ffd999, 10%)
+		transition: 300ms
+
+.gallery
+	&__item
+		position: relative
+		display: inline-block
+		margin: 0 13px
+		text-align: center
+	&__item-text
+		position: absolute
+		left: 20px
+		bottom: 20px
+		color: #FFFFFF
+
+.gallery
+	.slick-next
+		right: -40px
+		width: 40px
+		height: 40px
+		display: block
+		border-radius: 50%
+		border: 1px solid #CCCCCC
+		opacity: 1
+		z-index: 100
+		&:hover
+			border: 1px solid $mainRed
+	.slick-prev
+		left: -40px
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		border: 1px solid #CCCCCC
+		display: block
+		opacity: 1
+		z-index: 100
+		&:hover
+			border: 1px solid $mainRed
+	.slick-prev:before
+		content: "\f104"
+		font: normal normal normal 25px/1 FontAwesome
+		color: #CCCCCC
+		opacity: 1
+		display: block
+	.slick-next:before
+		content: "\f105"
+		font: normal normal normal 25px/1 FontAwesome
+		color: #CCCCCC
+		opacity: 1
+		display: block
+	.slick-dots
+		+flexBlockRow
+		justify-content: center
+		position: static
+		margin-top: 20px
+	.slick-dots li
+		+flexBlockRow
+		justify-content: center
+		align-items: center
+	.slick-dots li button
+		&:before
+			content: ""
+	.slick-dots li button
+		width: 3px
+		height: 3px
+		background-color: #aeaeae
+		border-radius: 50%
+	li.slick-active button
+		background-color: $mainRed
+		width: 40px
+		border-radius: 5px
+	.slick-slide img
+		display: inline-block
+		width: 100%
+
+.zoom
+	position: absolute
+	right: 15px
+	bottom: 15px
+	&:before
+		content: ""
+		background:  url("../img/general/zoom.png") no-repeat center
+		background-size: cover
+		display: block
+		width: 24px
+		height: 24px
+
+.gallery
+	.slick-next:hover.slick-next:before
+		color: $mainRed
+	.slick-prev:hover.slick-prev:before
+		color: $mainRed
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close
+	cursor: pointer
+
+.list
+	line-height: 1.4
+	li
+		margin-bottom: 15px
+		text-indent: 1.5em
+
+.pay-list
+	position: relative
+	z-index: 10
+	&__title
+		+font-size(24px)
+		font-weight: bold
+		margin-bottom: 15px
+ul.pay-list
+	list-style-type: disc
+	li
+		list-style-type: disc
+		margin-left: 20px
+		color: $mainRed
+		line-height: 1.5
+		span
+			color: #212121
+
+.pay
+	+flexBlockRow
+	padding-right: 30%
+	position: relative
+	margin-top: 40px
+.ball
+	position: absolute
+	bottom: 0
+	right: -60px
+	z-index: 1
+.info
+	position: relative
+	z-index: 10
+.maps
+	+flexBlockRow
+.google-map
+	width: 100%
+	height: 400px
+.map-block
+	width: 49%
+	position: relative
+	.address-title
+		+font-size(20px)
+	.address
+		top: 50px
+		left: 20px
+		padding: 25px 55px 25px 25px

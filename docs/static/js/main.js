@@ -18,7 +18,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
-        dots: true,
+        // dots: true,
         responsive: [
             {
                 breakpoint: 500,
@@ -66,9 +66,6 @@ $(document).ready(function () {
         });
     });
 
-    // $(".menu-mob").on("click", function () {
-    //    $(this).parents(".menu-block").find(".menu").toggleClass("menu-show");
-    // });
 
 });
 
@@ -77,13 +74,12 @@ function initMap() {
 
     var myOptions = {
         zoom: 16,
-        center: new google.maps.LatLng(55.128140, 37.547990),
+        center: new google.maps.LatLng(55.511925, 37.374914),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-
     var myOptions2 = {
         zoom: 16,
-        center: new google.maps.LatLng(55.464850, 36.937365),
+        center: new google.maps.LatLng(55.511071, 37.370094),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var map = new google.maps.Map(document.getElementById("map_canvas"),
@@ -92,13 +88,13 @@ function initMap() {
     var map2 = new google.maps.Map(document.getElementById("map_canvas2"),
         myOptions2,  marker2);
 
-    var hotel = {lat: 55.128140, lng: 37.547990};
+    var hotel = {lat: 55.511925, lng: 37.374914};
     var marker = new google.maps.Marker({
         position: hotel,
         map: map
     });
 
-    var hotel2 = {lat: 55.464850, lng: 36.937365};
+    var hotel2 = {lat: 55.511071, lng: 37.371202};
     var marker2 = new google.maps.Marker({
         position: hotel2,
         map: map2

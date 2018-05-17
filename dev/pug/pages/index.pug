@@ -9,22 +9,22 @@ block content
 		.content
 			.address
 				.address-block
-					.address-title Москва, ул. Яковлевская д. 1/а
-					span Вид на тренировочное поле сборной германии
-					.seat Мест: &nbsp;
+					.address-title Moskau, Jakovlevskaja-Str. 1/a
+					span Aussicht auf denTrainingsplatz der deutschen Nationalmannschaft
+					.seat Gesamtzahl Gäste: &nbsp;
 						span 230
-					.price Цена за место: &nbsp;
+					.price Aufenthaltspreis pro Person: &nbsp;
 						span 90-200$
 					.address-block__img.address-block__img1
 						img(src="./static/img/general/hotel1.png")
 
 			.address.address_two
 				.address-block
-					.address-title Москва, ул. Офицерская д. 3
-					span 150 м до тренировочного поля сборной германии
-					.seat Мест: &nbsp;
+					.address-title Moskau, Ofitzerskaja-Str 3
+					span 2 min. bis zur Trainingsstätte der deutschen Nationalmannschaft
+					.seat Gesamtzahl Gäste: &nbsp;
 						span 300
-					.price Цена за место: &nbsp;
+					.price Aufenthaltspreis pro Person: &nbsp;
 						span 50-70$
 					.address-block__img.address-block__img2
 						img(src="./static/img/general/hotel2.png")
@@ -32,47 +32,47 @@ block content
 	.container.bg-red.form
 		.content
 			form.form-block
-				.form-block__item.error
-					input(placeholder="Имя *")
 				.form-block__item
-					input(placeholder="E-mail *")
+					input(placeholder="Vorname/Nachname *")
 				.form-block__item
-					input(placeholder="Телефон *" name="phone")
+					input(placeholder="E-Mail *")
 				.form-block__item
-					input(placeholder="Кол-во человек *")
+					input(placeholder="Telefon *" name="phone")
 				.form-block__item
-					button.btn Зарегестрироваться
-			.agree Нажав кнопку «Зарегестрироваться», я даю согласие на обработку моих персональных данных и получение рекламы.
+					input(placeholder="Anzahl der Personen *")
+				.form-block__item
+					button.btn Anmelden
+			.agree Durch klicken auf die Schaltfläche "Anmelden" Stimme ich zu, meine personenbezogenen Daten zu verarbeiten und Werbung zu erhalten.
 
 	.container.container_padding#cond
 		.content
-			.title Условия и инфраструктура
+			.title Lebensbedingungen und Infrastruktur
 			.conditions
 				.conditions__item
 					.conditions__item1.conditions__item-com
 					.line
-					.conditions__text Вид на тренировочное<br> поле
+					.conditions__text Aussicht auf denTrainingsplatz der deutschen Nationalmannschaft
 				.conditions__item
 					.conditions__item2.conditions__item-com
 					.line
-					.conditions__text.conditions__text2 2 минуты до тренировочной базы сборной Германии
+					.conditions__text.conditions__text2 2 min. bis zur Trainingsstätte der deutschen Nationalmannschaft
 				.conditions__item
 					.conditions__item3.conditions__item-com
 					.line
-					.conditions__text Бар-ресторан
+					.conditions__text Bar-Restaurant
 
 				.conditions__item
 					.conditions__item4.conditions__item-com
 					.line
-					.conditions__text Сауна
+					.conditions__text Sauna
 				.conditions__item
 					.conditions__item5.conditions__item-com
 					.line
-					.conditions__text 3-х разовое питание
+					.conditions__text dreimalige Verpflegung pro Tag
 				.conditions__item
 					.conditions__item6.conditions__item-com
 					.line
-					.conditions__text Трансфер на матчи
+					.conditions__text Transfer zu den Spielen
 				img(src="./static/img/general/players.png").players
 
 
@@ -80,32 +80,32 @@ block content
 
 	.container.bg-gray#photo
 		.content
-			.title Фото отелей
+			.title Foto von Hotels
 			.gallery.js-slider.js-popup-gallery
 				a(href="./static/img/general/gallery1.png").gallery__item
 					img(src="./static/img/general/gallery1.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 				a(href="./static/img/general/gallery2.png").gallery__item
 					img(src="./static/img/general/gallery2.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 				a(href="./static/img/general/gallery3.png").gallery__item
 					img(src="./static/img/general/gallery3.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 
 				a(href="./static/img/general/gallery1.png").gallery__item
 					img(src="./static/img/general/gallery1.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 				a(href="./static/img/general/gallery2.png").gallery__item
 					img(src="./static/img/general/gallery1.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 				a(href="./static/img/general/gallery3.png").gallery__item
 					img(src="./static/img/general/gallery3.png")
-					.gallery__item-text Бильярдная и бар
+					//.gallery__item-text Бильярдная и бар
 					.zoom
 
 
@@ -113,7 +113,7 @@ block content
 
 	.container#information
 		.content
-			.title Информация и оплата
+			.title Weitere Informationen und Bezahlung
 			.info
 				p Liebe Fussballfreunde, schon ein wenig Zeit blieb es bis zum Anfang des Hauptfußballereignisses der Welt übrig. Wir laden euch nach Moskau zur Fußball-Weltmeisterschaft ein und sind bereit, euch zu helfen, sich hier in Moskau wie zu Hause  zu fühlen. Zur eurer Verfuegung koennen Wir stellen:
 				ul.list
@@ -124,59 +124,60 @@ block content
 			.pay
 				img(src="./static/img/general/ball.png").ball
 				ul.pay-list
-					.pay-list__title Способы оплаты:
+					.pay-list__title Zahlungsarten:
 					li
-						span Картой
+						span Zahlung per Kreditkarte
 					li
-						span Наличными
+						span Barbezahlung
 					li
-						span Частично картой/частично наличными
+						span Teilweise Kreditkartenzahlung/Barbezahlung
 				ul.pay-list
-					.pay-list__title Варианты оплаты:
+					.pay-list__title Bezahlung:
 					li
-						span 30% предоплата + 70% на месте
+						span 30% Vorausbezahlung + 70% Bezahlung im Hotel
 					li
-						span 30% предоплата + 70% на месте
+						span 30% Vorausbezahlung + 70% Bezahlung im Hotel
 					li
-						span 100% предоплата
+						span 100% Vorausbezahlung
 
 	.container.bg-red.form
 		.content
 			form.form-block
 				.form-block__item.error
-					input(placeholder="Имя *")
+					input(placeholder="Vorname/Nachname *")
 				.form-block__item
-					input(placeholder="E-mail *")
+					input(placeholder="E-Mail *")
 				.form-block__item
-					input(placeholder="Телефон *" name="phone")
+					input(placeholder="Telefon *" name="phone")
 				.form-block__item
-					input(placeholder="Кол-во человек *")
+					input(placeholder="Anzahl der Personen *")
 				.form-block__item
-					button.btn Зарегестрироваться
-			.agree Нажав кнопку «Зарегестрироваться», я даю согласие на обработку моих персональных данных и получение рекламы.
+					button.btn Anmelden
+			.agree Durch klicken auf die Schaltfläche "Anmelden" Stimme ich zu, meine personenbezogenen Daten zu verarbeiten und Werbung zu erhalten.
 	.container#g-map
 		.content
-			.title Отели на карте
+			.title Hotels auf der Karte
 			.maps
 				.map-block
 					.address
 						.address-block
-							.address-title Адрес:
-							span Москва, ул. Офицерская, д. 3
+							.address-title Adresse:
+							span Moskau, Ofitzerskaja-Str 3
 					.google-map#map_canvas
 				.map-block
 					.address
 						.address-block
-							.address-title Адрес:
-							span Москва, ул. Яковлевская д. 1/а
+							.address-title Adresse:
+							span Moskau, Jakovlevskaja-Str. 1/a
 					.google-map#map_canvas2
 
 	#popup-form.form-callback.mfp-hide
 		form#poup-callback(name="callback")
-			.title_form Обратный звонок
+			.title_form Rückruf
 			.form-block
 				.form-block__item
-					input(placeholder="Имя *" required)
+					input(placeholder="Vorname/Nachname *" required)
 				.form-block__item
-					input(placeholder="Телефон *" name="phone")
-				.btn.btn_blue Заказать звонок
+					input(placeholder="Telefon *" name="phone")
+				.btn.btn_blue Anruf bestellen
+			.agree Durch klicken auf die Schaltfläche "Anruf bestellen" Stimme ich zu, meine personenbezogenen Daten zu verarbeiten und Werbung zu erhalten.

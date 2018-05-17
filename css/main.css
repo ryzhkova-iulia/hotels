@@ -1120,17 +1120,17 @@ header {
 
 .menu {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
   .menu__item {
     font-size: 12px;
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 15px; }
+    margin-bottom: 7px; }
     .menu__item:last-child {
-      margin-right: 0; }
+      margin-bottom: 0; }
 
 .tel {
   text-align: right; }
@@ -1207,6 +1207,8 @@ header {
     width: 80%; }
     .form-callback .btn:hover {
       background-color: #cf1824; }
+  .form-callback .agree {
+    color: #000000; }
 
 .title_form {
   font-size: 24px;
@@ -1285,7 +1287,8 @@ header {
   position: relative;
   padding-right: 100px; }
   .conditions__text {
-    line-height: 1.3; }
+    line-height: 1.3;
+    width: 70%; }
   .conditions__text2 {
     width: 70%; }
   .conditions__item {
@@ -1602,6 +1605,12 @@ footer .menu__item, footer .tel a {
 footer .tel a:before {
   color: #FFFFFF; }
 
+footer .tel span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
 .block-menu {
   text-align: right; }
   .block-menu span {
@@ -1684,7 +1693,17 @@ footer .tel a:before {
     padding-left: 0; }
   .gallery .slick-prev, .gallery .slick-next {
     width: 30px;
-    height: 30px; } }
+    height: 30px; }
+  .logo {
+    max-width: 180px; }
+    .logo img {
+      width: 100%; }
+  .tel a {
+    font-size: 16px;
+    font-size: 1rem; }
+  .menu__item {
+    font-size: 10px;
+    font-size: 0.625rem; } }
 
 @media screen and (max-width: 700px) {
   .conditions__item {
@@ -1700,17 +1719,7 @@ footer .tel a:before {
     .map-block:last-child {
       margin-bottom: 0; }
   .address {
-    padding-right: 0; }
-  .logo {
-    max-width: 180px; }
-    .logo img {
-      width: 100%; }
-  .tel a {
-    font-size: 16px;
-    font-size: 1rem; }
-  .menu__item {
-    font-size: 10px;
-    font-size: 0.625rem; } }
+    padding-right: 0; } }
 
 @media screen and (max-width: 675px) {
   .logo, .tel {
@@ -1718,9 +1727,7 @@ footer .tel a:before {
   .block-menu {
     order: 1; }
     .block-menu span {
-      margin-top: 5px; } }
-
-@media screen and (max-width: 570px) {
+      margin-top: 5px; }
   header .content {
     display: flex;
     flex-direction: column;
@@ -1732,6 +1739,8 @@ footer .tel a:before {
     justify-content: space-between;
     align-items: center; }
   footer .tel {
+    margin-bottom: 15px; }
+  footer .menu {
     margin-bottom: 15px; }
   .tel {
     text-align: center; }

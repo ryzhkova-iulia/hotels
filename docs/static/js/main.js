@@ -66,6 +66,10 @@ $(document).ready(function () {
         });
     });
 
+    // $(".menu-mob").on("click", function () {
+    //    $(this).parents(".menu-block").find(".menu").toggleClass("menu-show");
+    // });
+
 });
 
 

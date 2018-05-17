@@ -25,7 +25,16 @@
 
 @media screen and (max-width: 960px)
 	.menu
-		display: none
+		//display: none
+		+flexBlockColumn
+	.menu__item
+		margin-bottom: 5px
+		margin-right: 0
+		&:last-child
+			margin-bottom: 0
+	//.menu-mob
+	//	display: block
+
 	.form-block__item
 		width: 49%
 		margin-bottom: 15px
@@ -81,6 +90,14 @@
 			margin-bottom: 0
 	.address
 		padding-right: 0
+	.logo
+		max-width: 180px
+		img
+			width: 100%
+	.tel a
+		+font-size(16px)
+	.menu__item
+		+font-size(10px)
 
 @media screen and (max-width: 675px)
 	.logo, .tel
@@ -89,6 +106,22 @@
 		order: 1
 		span
 			margin-top: 5px
+
+@media screen and (max-width: 570px)
+	header
+		.content
+			+flexBlockColumn
+	footer
+		.content
+			+flexBlockColumn
+		.tel
+			margin-bottom: 15px
+	.tel
+		text-align: center
+	.logo
+		margin-bottom: 15px
+	.menu-block
+		margin-bottom: 10px
 
 @media screen and (max-width: 550px)
 	.form-block__item
@@ -102,16 +135,6 @@
 		right: -180px
 
 @media screen and (max-width: 470px)
-	header
-		.content
-			+flexBlockColumn
-	.tel
-		text-align: center
-	.logo
-		margin-bottom: 15px
-	footer
-		.content
-			+flexBlockColumn
 	.block-menu
 		span
 			margin-top: 15px

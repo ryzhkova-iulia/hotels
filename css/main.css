@@ -1157,6 +1157,23 @@ header {
   text-decoration: underline;
   cursor: pointer; }
 
+.menu-mob {
+  display: none;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.menu-block {
+  text-align: center; }
+
+.menu.menu-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
 .form-callback {
   background-color: #FFFFFF;
   border-radius: 7px;
@@ -1621,7 +1638,15 @@ footer .tel a:before {
 
 @media screen and (max-width: 960px) {
   .menu {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .menu__item {
+    margin-bottom: 5px;
+    margin-right: 0; }
+    .menu__item:last-child {
+      margin-bottom: 0; }
   .form-block__item {
     width: 49%;
     margin-bottom: 15px; }
@@ -1675,7 +1700,17 @@ footer .tel a:before {
     .map-block:last-child {
       margin-bottom: 0; }
   .address {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .logo {
+    max-width: 180px; }
+    .logo img {
+      width: 100%; }
+  .tel a {
+    font-size: 16px;
+    font-size: 1rem; }
+  .menu__item {
+    font-size: 10px;
+    font-size: 0.625rem; } }
 
 @media screen and (max-width: 675px) {
   .logo, .tel {
@@ -1684,6 +1719,26 @@ footer .tel a:before {
     order: 1; }
     .block-menu span {
       margin-top: 5px; } }
+
+@media screen and (max-width: 570px) {
+  header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  footer .tel {
+    margin-bottom: 15px; }
+  .tel {
+    text-align: center; }
+  .logo {
+    margin-bottom: 15px; }
+  .menu-block {
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 550px) {
   .form-block__item {
@@ -1696,19 +1751,5 @@ footer .tel a:before {
     right: -180px; } }
 
 @media screen and (max-width: 470px) {
-  header .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .tel {
-    text-align: center; }
-  .logo {
-    margin-bottom: 15px; }
-  footer .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
   .block-menu span {
     margin-top: 15px; } }
